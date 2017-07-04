@@ -13,8 +13,7 @@ public class News {
     private String mSource;
     private Drawable mNewsImage;
 
-    //private Context wContext;
-    // This is the constructor of the Earthquake object with three inputs: 2 Strings and 1 float
+    // This is the constructor of the News object with four inputs: 3 Strings and 1 drawable
     public News (String description, String title, String source, Drawable newsImage){
 
         mDescription = description;
@@ -43,7 +42,7 @@ public class News {
         return "News{" +
                 "mDescription ='" + mDescription + '\'' +
                 ", mTitle ='" + mTitle + '\'' +
-                ", mSource =" + mSource + 
+                ", mSource =" + mSource +
                 '}';
     }
 
