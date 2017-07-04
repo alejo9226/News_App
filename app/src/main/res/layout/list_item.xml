@@ -4,10 +4,70 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/news_image"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/news_image"
+            android:layout_width="176dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="1dp"
+            android:src="@drawable/espn_api_image"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="14sp"
+                android:textColor="@color/newsTitleColor"
+                android:textStyle="italic"
+                android:text="Which All-Star starting lineup can do the most damage?" />
+
+            <TextView
+                android:id="@+id/source_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:gravity="bottom"
+                android:text="ESPN" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/news_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="The NL could benefit from Paul Goldschmidt at DH, but even with Mike Trout's availability in doubt, the AL's Astro-packed nine should be awesome."/>
+    <TextView
+        android:id="@+id/published_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:gravity="end"
+        android:text="2017-07-02T23:27:07Z"
+        android:layout_marginRight="12dp"/>
+
+
+
 
 
 
